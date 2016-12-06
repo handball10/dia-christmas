@@ -10,13 +10,16 @@ var parser = require('../libs/services/parser');
 
 router.get('/build', function(req, res) {
 
+    console.log('Building');
+
   parser
       .makeRequest()
       .then(function(o){
         res.sendStatus(200).end();
-
       })
   ;
+
+
 
 
 });

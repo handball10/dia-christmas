@@ -22,6 +22,7 @@ app.locals.ENV_DEVELOPMENT = env == 'development';
 var schedule = require('node-schedule');
 
 var job = schedule.scheduleJob('0 0 0 * * *', function(){
+
     parser
         .makeRequest()
         .then(function(o){
