@@ -14,7 +14,7 @@ var parser = require('./libs/services/parser');
 
 var app = express();
 
-var env = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV || 'production';
 app.locals.ENV = env;
 app.locals.ENV_DEVELOPMENT = env == 'development';
 
