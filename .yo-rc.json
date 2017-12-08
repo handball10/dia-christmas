@@ -1,0 +1,15 @@
+{
+  "generator-rest": {
+    "srcDir": "src",
+    "apiDir": "api",
+    "authMethods": []
+  },
+  "generator-express": {
+    "promptValues": {
+      "type": "Basic",
+      "viewEngine": "Jade",
+      "cssPreprocessor": "None",
+      "buildTool": "Gulp"
+    }
+  }
+}
