@@ -21,7 +21,8 @@ gulp.task('develop', function () {
   nodemon({
     script: 'bin/www',
     ext: 'js jade coffee',
-    stdout: false
+    stdout: false,
+    ignore : ['frontend/*']
   }).on('readable', function () {
     this.stdout.on('data', function (chunk) {
       if(/^Express server listening on port/.test(chunk)){
