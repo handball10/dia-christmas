@@ -75,4 +75,6 @@ app.use((err, req, res, next) => {
     });
 });
 
+parser.parse();
+
 module.exports = app;
